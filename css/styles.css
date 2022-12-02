@@ -163,6 +163,9 @@ img {
     color: var(--accent-color);
 }
 
+
+
+
 /* оформлення героя */
 .overlay {
     max-width: 1600px;
@@ -264,6 +267,7 @@ img {
 .features {
     display: flex;
 }
+
 .features-examples {
     margin-right: 30px;
     flex-basis: calc((100% - 3 * 30px) / 4);
@@ -272,6 +276,33 @@ img {
 .features-examples:nth-last-child(-n+1) {
     margin-right: 0px;
 }
+
+.features-examples::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-examples:nth-child(1)::before {
+    background-image: url(../images/icons.svg/antenna.png);
+}
+
+.features-examples:nth-child(2)::before {
+    background-image: url(../images/icons.svg/clock.png);
+}
+
+.features-examples:nth-child(3)::before {
+    background-image: url(../images/icons.svg/diagram.png);
+}
+
+.features-examples:nth-child(4)::before {
+    background-image: url(../images/icons.svg/astronaut.svg);
+}
+
 .features-title {
     margin: 0;
     margin-bottom: 10px;
@@ -472,6 +503,9 @@ img {
 .filter-button:focus {
     background-color: var(--accent-color);
     color: var(--simple-white-text-color);
+    box-shadow:  0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio {
@@ -485,8 +519,13 @@ img {
 
 .portfolio-item {
     flex-basis: calc((100% - 2 * 30px) / 3);
-
     background-color: var(--background-color);
+}
+
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .item-contetn {
