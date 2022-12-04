@@ -397,7 +397,6 @@ img {
     margin: 0;
     margin-top: 16px;
     align-items: center;
-    width: 206px;
 }
 
 .social-links {
@@ -409,9 +408,23 @@ img {
     margin-right: 0;
 }
 
+.network {
+    display: block;
+    color: #AFB1B8;
+    background-color: #FFFFFF;
+
+}
+
+.network:hover,
+.network:focus {
+    color:#FFFFFF;
+    background-color: #2196F3;
+}
+
 .social-icon {
     width: 44px;
     height: 44px;
+    fill: currentColor;
 }
 
 /* оформлення футера */
