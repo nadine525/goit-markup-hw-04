@@ -182,7 +182,7 @@ img {
     padding-bottom: 200px;
     text-align: center;
     max-width: 1600px;
-    background: C4C4C4;
+    background-color: #C4C4C4;
     background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
@@ -445,10 +445,6 @@ img {
     margin-right: 0;
 }
 
-.item:hover {
-    border: 1px solid #2196F3;
-}
-
 .client-link {
     display: flex;
     justify-content: center;
@@ -460,8 +456,10 @@ img {
     border-radius: 4px;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
     color: #2196F3;
+    border: 1px solid #2196F3;
 }
 
 .clients-logo {
@@ -682,7 +680,8 @@ img {
     display: inline-block;
 }
 
-.portfolio-link:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
